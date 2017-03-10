@@ -1,0 +1,31 @@
+ logs
+2015/11/19 00:10:35 [error] 19002#0: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: project.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "project.local"
+2015/11/19 00:13:06 [error] 19126#0: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: project.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "project.local"
+2015/11/19 00:14:24 [error] 19263#0: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: project.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "project.local"
+2015/11/19 00:14:27 [error] 19263#0: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: project.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "project.local"
+2017/03/10 08:22:22 [error] 1384#0: *26 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'yii\web\ForbiddenHttpException' with message 'Access denies' in /var/www/project/basic/controllers/SiteController.php:99
+Stack trace:
+#0 /var/www/project/basic/vendor/yiisoft/yii2/base/Controller.php(149): app\controllers\SiteController->beforeAction(Object(yii\web\ErrorAction))
+#1 /var/www/project/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('error', Array)
+#2 /var/www/project/basic/vendor/yiisoft/yii2/web/ErrorHandler.php(85): yii\base\Module->runAction('site/error')
+#3 /var/www/project/basic/vendor/yiisoft/yii2/base/ErrorHandler.php(109): yii\web\ErrorHandler->renderException(Object(yii\web\ForbiddenHttpException))
+#4 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\ForbiddenHttpException))
+#5 {main}
+Previous exception:
+exception 'yii\web\ForbiddenHttpException' with message 'Access denies' in /var/www/project/basic/controllers/SiteController.php:99
+Stack trace:
+#0 /var/ww" while reading upstream, client: 127.0.0.1, server: project.local, request: "POST /site/logout HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "project.local", referrer: "http://project.local/"
+2017/03/10 08:23:04 [error] 1384#0: *26 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'yii\web\ForbiddenHttpException' with message 'Access denied' in /var/www/project/basic/controllers/SiteController.php:99
+Stack trace:
+#0 /var/www/project/basic/vendor/yiisoft/yii2/base/Controller.php(149): app\controllers\SiteController->beforeAction(Object(yii\web\ErrorAction))
+#1 /var/www/project/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('error', Array)
+#2 /var/www/project/basic/vendor/yiisoft/yii2/web/ErrorHandler.php(85): yii\base\Module->runAction('site/error')
+#3 /var/www/project/basic/vendor/yiisoft/yii2/base/ErrorHandler.php(109): yii\web\ErrorHandler->renderException(Object(yii\web\ForbiddenHttpException))
+#4 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\ForbiddenHttpException))
+#5 {main}
+Previous exception:
+exception 'yii\web\ForbiddenHttpException' with message 'Access denied' in /var/www/project/basic/controllers/SiteController.php:99
+Stack trace:
+#0 /var/ww" while reading upstream, client: 127.0.0.1, server: project.local, request: "GET /site/index HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "project.local", referrer: "http://project.local/"
